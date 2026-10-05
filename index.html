@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Surprise 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="card" id="intro">
+    <h1>💗 A Little Surprise 💗</h1>
+    <p>
+      Before you continue, I want you to know that
+      this little page was made especially for you.
+    </p>
+    <button class="yes glow" onclick="showStep('form')">
+      Start ✨
+    </button>
+  </div>
+
+  <div class="card hidden" id="form">
+    <h2>Let's make this personal 💕</h2>
+
+    <input id="name" type="text" placeholder="Your Name">
+    <input id="birthday" type="date">
+
+    <select id="color">
+      <option value="">Favourite Color</option>
+      <option>Red</option>
+      <option>Pink</option>
+      <option>Blue</option>
+      <option>Black</option>
+      <option>Purple</option>
+      <option>White</option>
+    </select>
+
+    <input id="food" type="text" placeholder="Favourite Food">
+
+    <button class="yes" onclick="showMessage()">
+      Continue 💖
+    </button>
+  </div>
+
+  <div class="card hidden" id="message">
+    <h1 id="hello"></h1>
+
+    <p>
+      জানো, কিছু মানুষ জীবনে হঠাৎ করে আসে,
+      কিন্তু আসার পর পুরো পৃথিবীটাই একটু অন্যরকম সুন্দর
+      করে দেয়।
+    </p>
+
+    <p>
+      তোমার সাথে কথা বলা, তোমাকে নিয়ে ভাবা,
+      তোমার ছোট ছোট ব্যাপারগুলো মনে রাখা—
+      সবকিছুই আমার কাছে অনেক special.
+    </p>
+
+    <p>
+      তুমি হয়তো জানো না,
+      কিন্তু তোমার একটা ছোট্ট হাসিও আমার পুরো দিনটা
+      ভালো করে দিতে পারে। ❤️
+    </p>
+
+    <button class="yes" onclick="showProposal()">
+      One More Thing 💌
+    </button>
+  </div>
+
+  <div class="card hidden" id="proposal">
+    <h2>From My Heart 💗</h2>
+
+    <p>
+      আমি জানি না ভবিষ্যতে কী হবে,
+      কিন্তু আজ একটা কথা বলতে চাই—
+    </p>
+
+    <br>
+
+    <p>
+      তুমি আমার কাছে সত্যিই অনেক special।
+      তোমার সাথে আরও অনেক সুন্দর মুহূর্ত তৈরি করতে চাই।
+    </p>
+
+    <br>
+
+    <h1>You + Me</h1>
+    <h2>Will you accept? 💖</h2>
+
+    <button id="yesBtn" class="yes" onclick="yesClicked()">
+      YES ❤️
+    </button>
+
+    <button id="noBtn" class="no" onclick="noClicked()">
+      NO 😶
+    </button>
+
+    <p id="answer"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+      </html>
